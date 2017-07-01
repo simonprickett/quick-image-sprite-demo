@@ -13,47 +13,47 @@
 }
 
 #cell1 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 0px 0px;
 }
 
 #cell2 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 400px 0px;
 }
 
 #cell3 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 200px 0px;
 }
 
 #cell4 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 0px 400px;
 }
 
 #cell5 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 400px 400px;
 
 }
 
 #cell6 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 200px 400px;
 }
 
 #cell7 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 0px 200px;
 }
 
 #cell8 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 400px 200px;
 }
 
 #cell9 {
-	background: url('/images/source.png');
+	background: url('../images/source.png');
 	background-position: 200px 200px;
 }
