@@ -54,10 +54,10 @@ const game = {
 	},
 
 	gameOver: function() {
-		// TODO
+		// TODO do something better here as the alert stops user from seeing final result...
 		alert(`well done in ${game.numMoves} moves.`);
-		// Remove click handlers from each cell
 		// Shuffle and start over.
+		game.newGame();
 	},
 
 	cellClicked: function(event) {
