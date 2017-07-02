@@ -2,6 +2,9 @@
 
 const game = {
 	tilePositions: [ '1', '2', '3', '4', '5', '6', '7', '8', 'blank'],
+
+	winningSequence: '12345678blank',
+
 	validMoves: [
 		/* 0 */ '13',
 		/* 1 */ '024',
@@ -13,6 +16,7 @@ const game = {
 		/* 7 */ '468',
 		/* 8 */ '57'
 	],
+
 	numMoves: 0,
 
 	initialize: function() {
@@ -51,8 +55,9 @@ const game = {
 
 	gameOver: function() {
 		// TODO
-
+		alert(`well done in ${game.numMoves} moves.`);
 		// Remove click handlers from each cell
+		// Shuffle and start over.
 	},
 
 	cellClicked: function(event) {
@@ -80,6 +85,24 @@ const game = {
 
 				this.className = 'cell pieceblank';
 				blankCell.className = `cell piece${clickedPuzzlePiece}`;
+
+				// Record this as a move
+				game.numMoves++;
+
+				// Is the game over yet? It is when the tilePositions are:
+				// 12345678blank
+				const cells = document.getElementsByClassName('cell');
+
+				let cellPositions = '';
+
+				for (let cell of cells) {
+					cellPositions = `${cellPositions}${cell.className.substring(10)}`;
+				}
+
+				if (cellPositions === game.winningSequence) {
+					// Game's over
+					game.gameOver();
+				}
 			}
 		} else {
 			// The blank piece was clicked...
