@@ -12,48 +12,46 @@
 	margin-bottom: 5px;
 }
 
-#cell1 {
+.piece1 {
 	background: url('../images/source.png');
 	background-position: 0px 0px;
 }
 
-#cell2 {
+.piece2 {
 	background: url('../images/source.png');
 	background-position: 400px 0px;
 }
 
-#cell3 {
+.piece3 {
 	background: url('../images/source.png');
 	background-position: 200px 0px;
 }
 
-#cell4 {
+.piece4 {
 	background: url('../images/source.png');
 	background-position: 0px 400px;
 }
 
-#cell5 {
+.piece5 {
 	background: url('../images/source.png');
 	background-position: 400px 400px;
-
 }
 
-#cell6 {
+.piece6 {
 	background: url('../images/source.png');
 	background-position: 200px 400px;
 }
 
-#cell7 {
+.piece7 {
 	background: url('../images/source.png');
 	background-position: 0px 200px;
 }
 
-#cell8 {
+.piece8 {
 	background: url('../images/source.png');
 	background-position: 400px 200px;
 }
 
-#cell9 {
-	background: url('../images/source.png');
-	background-position: 200px 200px;
+.pieceblank {
+	background-color: #000000;
 }
