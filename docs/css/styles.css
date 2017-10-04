@@ -1,0 +1,57 @@
+.grid {
+	display: flex;
+	width: 600px;
+	height: 600px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.cell {
+	flex: 0 0 32%;
+	height: 32%;
+	margin-bottom: 5px;
+}
+
+.piece1 {
+	background: url('../images/source.png');
+	background-position: 0px 0px;
+}
+
+.piece2 {
+	background: url('../images/source.png');
+	background-position: 400px 0px;
+}
+
+.piece3 {
+	background: url('../images/source.png');
+	background-position: 200px 0px;
+}
+
+.piece4 {
+	background: url('../images/source.png');
+	background-position: 0px 400px;
+}
+
+.piece5 {
+	background: url('../images/source.png');
+	background-position: 400px 400px;
+}
+
+.piece6 {
+	background: url('../images/source.png');
+	background-position: 200px 400px;
+}
+
+.piece7 {
+	background: url('../images/source.png');
+	background-position: 0px 200px;
+}
+
+.piece8 {
+	background: url('../images/source.png');
+	background-position: 400px 200px;
+}
+
+.pieceblank {
+	background-color: #000000;
+}
